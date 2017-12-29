@@ -86,23 +86,9 @@ for i in range(clusterAssment.shape[0]):
     result[[categories]] += 1
 print result
 
-# # bins = np.arange(-2, 52, 1)
-# bins = 3
-# plt.xlim(0, 50)
-# plt.ylim(min(result)-5, max(result)+5)
-# plt.hist(result, bins=bins, alpha=0.5)
-# plt.title('feature distribution')
-# plt.xlabel('feature description')
-# plt.ylabel('frequency')
-# plt.show()
-
 x = xrange(0, 50)
 y = result
 plt.plot(x, y)
 plt.show()
-# print "center:"
-# print centroids
-# print "clusterAssment:"
-# print clusterAssment
 
 

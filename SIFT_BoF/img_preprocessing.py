@@ -33,17 +33,6 @@ def img_processing(categories='cat'):
 
     return coll
 
-# imgs = img_processing()
-# sift, gray, kp, pic, dataSet = [[[]]], [[[]]], [[[]]], [[[]]], [[[]]]
-# for i in range(3):
-#     # initiate SIFT detector
-#     sift[i] = cv2.xfeatures2d.SIFT_create()
-#     gray[i]= cv2.cvtColor(imgs[i],cv2.COLOR_BGR2GRAY)
-#     # find the keypoint and descriptors with SIFT
-#     kp[i], dataSet[i] = sift[i].detectAndCompute(gray[i],None)
-#     pic[i] = cv2.drawKeypoints(gray[i], kp[i], imgs[i])
-#     cv2.imwrite('sift_keypoints.jpg', pic[i])
-
 if __name__ == '__main__':
     img_processing()
     
